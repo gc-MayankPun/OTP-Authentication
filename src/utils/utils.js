@@ -13,7 +13,7 @@ export function getOtpHTML(otp) {
             body {
                 font-family: Arial, sans-serif;
                 background-color: #f4f4f4;
-                display: text;
+                display: flex;
                 justify-content: center;
                 align-items: center;
                 height: 100vh;
@@ -37,7 +37,7 @@ export function getOtpHTML(otp) {
     <body>
         <div class="container">
             <h2>Your OTP Code</h2>
-            <p class="opt">${otp}</p>
+            <p class="otp">${otp}</p>
             <p>Please use this code to verify your email address.</p>
         </div>
     </body>

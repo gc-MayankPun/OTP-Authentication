@@ -127,7 +127,7 @@ export async function getMe(req, res) {
   }
 
   const decoded = jwt.verify(token, config.JWT_SECRET);
-  const user = await userModel.findById(decoded.id); 
+  const user = await userModel.findById(decoded.id);
   if (!user) {
     return res.status(404).json({ message: "User not found" });
   }
